@@ -1,3 +1,6 @@
+# NAME:SWETHA N
+# REG.NO:212222110050
+
 # Enumeration
 Enumeration Techniques
 
@@ -26,86 +29,64 @@ Open terminal and try execute some kali linux commands
 Following Categories of pen test tools are identified:
 Information Gathering.
 
-Google Hacking:
+# Google Hacking:
 
 Google hacking, also known as Google dorking, is a technique that involves using advanced operators to perform targeted searches on Google. These operators can be used to search for specific types of information, such as sensitive data that may have been inadvertently exposed on the web. Here are some advanced operators that can be used for Google hacking:
 
-site: This operator allows you to search for pages that are within a specific website or domain. For example, "site:example.com" would search for pages that are on the example.com domain.
+# site: 
+This operator allows you to search for pages that are within a specific website or domain. For example, "site:example.com" would search for pages that are on the example.com domain.
 Following searches for all the sites that is in the domain yahoo.com
+![369894477-49987094-4061-4644-83fe-46e62248f259](https://github.com/user-attachments/assets/9f563598-90e6-46f2-957b-001050254f1b)
 
-filetype: This operator allows you to search for files of a specific type. For example, "filetype:pdf" would search for all PDF files.
+
+# filetype: 
+This operator allows you to search for files of a specific type. For example, "filetype:pdf" would search for all PDF files.
 Following searches for pdf file in the domain yahoo.com
+![369894618-3fd13586-1121-4d58-b16b-687015f8ba6c](https://github.com/user-attachments/assets/df7f17f7-b9bd-4070-b4e8-83e7ae640e3c)
 
 
 
-intext: This operator allows you to search for pages that contain specific text within the body of the page. For example, "intext:password" would search for pages that contain the word "password" within the body of the page.
+
+# intext: 
+This operator allows you to search for pages that contain specific text within the body of the page. For example, "intext:password" would search for pages that contain the word "password" within the body of the page.
+![369894888-3a2b9cec-cc6b-41bd-83ff-448a26aa3c2e](https://github.com/user-attachments/assets/a2994e5f-b394-4f90-86d9-ded88dcb3a82)
 
 
-inurl: This operator allows you to search for pages that contain specific text within the URL. For example, "inurl:admin" would search for pages that contain the word "admin" within the URL.
+# inurl: 
+This operator allows you to search for pages that contain specific text within the URL. For example, "inurl:admin" would search for pages that contain the word "admin" within the URL.
+![369895140-6d6af348-6c44-440e-9bc5-2c08cceb7edb](https://github.com/user-attachments/assets/11e89bd2-05b1-45b1-82fc-d436ea645755)
 
-intitle: This operator allows you to search for pages that contain specific text within the title tag. For example, "intitle:index of" would search for pages that contain "index of" within the title tag.
+# intitle: 
+This operator allows you to search for pages that contain specific text within the title tag. For example, "intitle:index of" would search for pages that contain "index of" within the title tag.
+![image](https://github.com/user-attachments/assets/6db77d90-b49e-43c9-bfe5-f5ada2d3fdbc)
 
-link: This operator allows you to search for pages that link to a specific URL. For example, "link:example.com" would search for pages that link to the example.com domain.
+# link: 
+This operator allows you to search for pages that link to a specific URL. For example, "link:example.com" would search for pages that link to the example.com domain.
+![image](https://github.com/user-attachments/assets/19e10a4d-4881-454e-9ab4-d3932730361d)
 
-cache: This operator allows you to view the cached version of a page. For example, "cache:example.com" would show the cached version of the example.com website.
+# cache: 
+This operator allows you to view the cached version of a page. For example, "cache:example.com" would show the cached version of the example.com website.
+![image](https://github.com/user-attachments/assets/a7b50ff1-dc5a-4da7-b10d-e728bd95884d)
 
  
-#DNS Enumeration
+# DNS Enumeration
+
+## DNS Recon
+![369895690-30ab6d21-8b76-4847-aed2-daaeb61ce67f](https://github.com/user-attachments/assets/010ab30f-dff6-440f-b368-b829e878985c)
+
+## dnsenum:
+![369895810-11f2ed03-737e-4b77-a497-31c30e6cf083](https://github.com/user-attachments/assets/89b60c28-facf-4d49-8d66-6ec2e6ec86da)
+
+![369895843-c4afe7ca-14b2-442e-ab0b-4ea0171227c8](https://github.com/user-attachments/assets/c8615525-6099-47b1-ac3a-d0d1ce3874da)
+
+## smtp-user-enum:
+![369895982-db7ca2cc-65be-4b50-bd47-c4076c65ea28](https://github.com/user-attachments/assets/82c92811-5ba2-4f58-9407-5b2c81165f6b)
+
+## nmap –script smtp-enum-users.nse :
+![369896219-9b7f8e90-d780-42c2-acf2-c301d2eac104](https://github.com/user-attachments/assets/2f8338b8-8d8f-4686-92d6-37a2e90ee94b)
 
 
-##DNS Recon
-provides the ability to perform:
-Check all NS records for zone transfers
-Enumerate general DNS records for a given domain (MX, SOA, NS, A, AAAA, SPF , TXT)
-Perform common SRV Record Enumeration
-Top level domain expansion
-## OUTPUT:
 
-
-
-
-
-
-
-##dnsenum
-Dnsenum is a multithreaded perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks. The main purpose of Dnsenum is to gather as much information as possible about a domain. The program currently performs the following operations:
-
-Get the host’s addresses (A record).
-Get the namservers (threaded).
-Get the MX record (threaded).
-Perform axfr queries on nameservers and get BIND versions(threaded).
-Get extra names and subdomains via google scraping (google query = “allinurl: -www site:domain”).
-Brute force subdomains from file, can also perform recursion on subdomain that have NS records (all threaded).
-Calculate C class domain network ranges and perform whois queries on them (threaded).
-Perform reverse lookups on netranges (C class or/and whois netranges) (threaded).
-Write to domain_ips.txt file ip-blocks.
-This program is useful for pentesters, ethical hackers and forensics experts. It also can be used for security tests.
-
-
-##smtp-user-enum
-Username guessing tool primarily for use against the default Solaris SMTP service. Can use either EXPN, VRFY or RCPT TO.
-
-
-In metasploit list all the usernames using head /etc/passwd or cat /etc/passwd:
-
-select any username in the first column of the above file and check the same
-
-
-#Telnet for smtp enumeration
-Telnet allows to connect to remote host based on the port no. For smtp port no is 25
-telnet <host address> 25 to connect
-and issue appropriate commands
-  
- ##Output
-  
-  
-
-## nmap –script smtp-enum-users.nse <hostname>
-
-The smtp-enum-users.nse script attempts to enumerate the users on a SMTP server by issuing the VRFY, EXPN or RCPT TO commands. The goal of this script is to discover all the user accounts in the remote system.
-
-
-## OUTPUT:
 
 
 ## RESULT:
