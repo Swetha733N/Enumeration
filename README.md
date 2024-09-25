@@ -72,18 +72,18 @@ This operator allows you to view the cached version of a page. For example, "cac
 # DNS Enumeration
 
 ## DNS Recon
-![369895690-30ab6d21-8b76-4847-aed2-daaeb61ce67f](https://github.com/user-attachments/assets/010ab30f-dff6-440f-b368-b829e878985c)
+![image](https://github.com/user-attachments/assets/5840cfb0-01d6-45cf-8e66-21e9a59536e3)
+
 
 ## dnsenum:
-![369895810-11f2ed03-737e-4b77-a497-31c30e6cf083](https://github.com/user-attachments/assets/89b60c28-facf-4d49-8d66-6ec2e6ec86da)
+![image](https://github.com/user-attachments/assets/57da65f0-fd0c-4a1e-9575-7d308d772ffe)
 
-![369895843-c4afe7ca-14b2-442e-ab0b-4ea0171227c8](https://github.com/user-attachments/assets/c8615525-6099-47b1-ac3a-d0d1ce3874da)
+
+
 
 ## smtp-user-enum:
-![369895982-db7ca2cc-65be-4b50-bd47-c4076c65ea28](https://github.com/user-attachments/assets/82c92811-5ba2-4f58-9407-5b2c81165f6b)
+![image](https://github.com/user-attachments/assets/1b788cd5-21cd-4482-9bf4-91cce8c04fa1)
 
-## nmap –script smtp-enum-users.nse :
-![369896219-9b7f8e90-d780-42c2-acf2-c301d2eac104](https://github.com/user-attachments/assets/2f8338b8-8d8f-4686-92d6-37a2e90ee94b)
 
 
 
